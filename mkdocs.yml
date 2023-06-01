@@ -109,6 +109,18 @@ nav:
     - cmake/index.md
     - 基础教程:
       - cmake/basic/index.md
+      - 第 1 步 [一个简单的起点]: cmake/basic/01_a_basic_starting_point.md
+      - 第 2 步 [添加一个库]: cmake/basic/02_adding_a_library.md
+      - 第 3 步 [为库添加使用要求]: cmake/basic/03_adding_usage_requirements_for_a_library.md
+      - 第 4 步 [添加生成表达式]: cmake/basic/04_adding_eenerator_expressions.md
+      - 第 5 步 [安装和测试]: cmake/basic/05_installing_and_testing.md
+      - 第 6 步 [添加测试看板支持]: cmake/basic/06_adding_support_for_a_testing_dashboard.md
+      - 第 7 步 [添加系统分析]: cmake/basic/07_adding_system_introspection.md
+      - 第 8 步 [自定义命令和生成文件]: cmake/basic/08_adding_a_custom_gommand_and_generated_file.md
+      - 第 9 步 [打包安装程序]: cmake/basic/09_packaging_an_installer.md
+      - 第 10 步 [选择静态库或共享库]: cmake/basic/10_selecting_static_or_shared_libraries.md
+      - 第 11 步 [添加导出配置]: cmake/basic/11_adding_export_configuration.md
+      - 第 12 步 [打包调试和发布版本]: cmake/basic/12_packaging_debug_and_release.md
     - CMake 命令:
       - cmake/cmd/index.md
 
