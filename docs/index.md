@@ -3,6 +3,7 @@ hide:
   - navigation
   - toc
   - path
+  - feedback
 ---
 
 # Eglinux
