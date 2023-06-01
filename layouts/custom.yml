@@ -1,0 +1,87 @@
+size: { width: 3840, height: 2160 }
+layers:
+  - background:
+      image: layouts/background.png
+      color: "#0075D858"
+
+  - size: { width: 4000, height: 4000 }
+    offset: { x: 2300, y: -2300 }
+    icon:
+      value: material/circle
+      color: "#fdf5e64f"
+
+  - size: { width: 480, height: 480 }
+    offset: { x: 3200, y: 100 }
+    icon:
+      value: myself/logo
+      color: white
+
+  - size: { width: 2800, height: 400 }
+    offset: { x: 300, y: 100 }
+    typography:
+      content: "{{ page.meta.serial }}"
+      overflow: shrink
+      align: start center
+      color: white
+      line:
+        amount: 2
+        height: 1
+      font:
+        family: Noto Sans SC
+        style: Bold
+
+  - size: { width: 2800, height: 400 }
+    offset: { x: 500, y: 400 }
+    typography:
+      content: "{{ page.title }}"
+      overflow: shrink
+      align: start center
+      color: yellow
+      line:
+        amount: 1
+        height: 1.25
+      font:
+        family: Noto Sans SC
+        style: Bold
+
+  - size: { width: 2000, height: 900 }
+    offset: { x: 1000, y: 600 }
+    typography:
+      content: "{{ page.meta.description }}"
+      overflow: shrink
+      align: start center
+      color: white
+      line:
+        amount: 5
+        height: 1.25
+      font:
+        family: Noto Sans SC
+        style: Bold
+
+  - size: { width: 1800, height: 300 }
+    offset: { x: 200, y: 1760 }
+    typography:
+      content: "欢迎访问 Eglinux 个人网站：https://www.eglinux.com"
+      overflow: shrink
+      align: start center
+      color: white
+      line:
+        amount: 3
+        height: 1.25
+      font:
+        family: Noto Sans SC
+        style: Bold
+
+  - size: { width: 1600, height: 300 }
+    offset: { x: 2650, y: 1860 }
+    typography:
+      content: "All Rights Reserved©Eglinux"
+      overflow: shrink
+      align: start center
+      color: white
+      line:
+        amount: 1
+        height: 2
+      font:
+        family: Noto Sans SC
+        # style: Bold

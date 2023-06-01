@@ -55,7 +55,9 @@ plugins:
   - search:
       separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
   - social:
-      cards_layout: default/variant
+      # debug: true
+      # debug_color: yellow
+      cards_layout: custom
       cards_layout_options:
           # background_color: "#759EC8"
           background_color: "#0075D858"
