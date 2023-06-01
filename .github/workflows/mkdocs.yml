@@ -22,8 +22,9 @@ jobs:
           path: .cache
           restore-keys: |
             mkdocs-material-
-      - run: sudo apt update;sudo apt install pngquant 
-      - run: pip install jieba
+      - run: sudo apt update;sudo apt install pngquant libcairo2-dev libfreetype6-dev libffi-dev libjpeg-dev libpng-dev libz-dev
+
+      - run: pip install jieba pillow cairosvg
       - run: pip install git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git
       - run: mkdocs gh-deploy
 env:

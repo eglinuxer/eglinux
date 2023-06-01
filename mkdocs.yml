@@ -54,6 +54,13 @@ plugins:
   # - privacy # 目前如果启用，搜索框就会不能显示
   - search:
       separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+  - social:
+      cards_layout: default/variant
+      cards_layout_options:
+          # background_color: "#759EC8"
+          background_color: "#0075D858"
+          background_image: layouts/background.png
+          font_family: Noto Sans SC
 
 extra:
   homepage: https://www.eglinux.com
