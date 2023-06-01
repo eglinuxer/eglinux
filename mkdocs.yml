@@ -92,7 +92,7 @@ extra:
           name: 有待改进
           data: 0
           note: >-
-            感谢您的反馈！请通过 <a href="https://github.com/eglinuxer/eglinux/issues/new/?title=[Feedback]+{title}+-+{url}" target=_blank> 告诉我改进建议</a>。
+            感谢您的反馈！请通过 <a href="https://github.com/eglinuxer/eglinux/issues/new/?title=[页面问题反馈]+{title}+-+{url}" target=_blank>Github issues</a> 告诉我改进建议。
                      
 markdown_extensions:
   - pymdownx.emoji:
