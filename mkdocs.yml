@@ -32,6 +32,8 @@ theme:
     - search.share
     - content.code.copy
     # - content.code.select
+    - header.autohide
+    - announce.dismiss
   palette:
 
     # Palette toggle for automatic mode
