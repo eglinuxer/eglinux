@@ -36,7 +36,7 @@ theme:
     - search.share
     - content.code.copy
     # - content.code.select
-    - header.autohide
+    # - header.autohide
     - announce.dismiss
     # - navigation.footer
     - content.action.edit
