@@ -71,19 +71,19 @@ cmake --build build
 
 ??? example "点击展开查看 `TODO 1`"
 
-    ``` cmake
+    ``` cmake title="CMakeLists.txt"
     cmake_minimum_required(VERSION 3.10)
     ```
 
 ??? example "点击展开查看 `TODO 2`"
 
-    ``` cmake
+    ``` cmake title="CMakeLists.txt"
     project(Tutorial)
     ```
 
 ??? example "点击展开查看 `TODO 3`"
 
-    ``` cmake
+    ``` cmake title="CMakeLists.txt"
     add_executable(Tutorial tutorial.cxx)
     ```
 
@@ -116,7 +116,7 @@ CMake 有一些特殊变量，这些变量要么在幕后创建，要么在项�
 
 让我们再次构建我们的项目。由于我们已经为[练习 1](#1-) 创建了构建目录并运行了 CMake，因此我们可以跳到构建步骤：
 
-``` cmake
+``` shell
 cmake --build build
 ```
 
@@ -134,7 +134,7 @@ cmake --build build
 
 ??? example "点击展开查看 `TODO 4`"
 
-    ``` cpp
+    ``` cpp title="tutorial.cxx"
     const double inputValue = std::stod(argv[1]);
     ```
 
@@ -144,7 +144,7 @@ cmake --build build
 
 ??? example "点击展开查看 `TODO 6`"
 
-    ``` cmake
+    ``` cmake title="CMakeLists.txt"
     set(CMAKE_CXX_STANDARD 11)
     set(CMAKE_CXX_STANDARD_REQUIRED True)
     ```
@@ -185,7 +185,7 @@ cmake --build build
 
 让我们再次构建我们的项目。和以前一样，我们已经创建了一个构建目录并运行了 CMake，因此我们可以跳到构建步骤：
 
-``` cmake
+``` shell
 cmake --build build
 ```
 
@@ -199,7 +199,7 @@ cmake --build build
 
 ??? example "点击展开查看 `TODO 7`"
 
-    ``` cmake
+    ``` cmake title="CMakeLists.txt"
     project(Tutorial VERSION 1.0)
     ```
 
@@ -207,7 +207,7 @@ cmake --build build
 
 ??? example "点击展开查看 `TODO 8`"
 
-    ``` cmake
+    ``` cmake title="CMakeLists.txt"
     configure_file(TutorialConfig.h.in TutorialConfig.h)
     ```
 
@@ -221,7 +221,7 @@ cmake --build build
 
 ??? example "点击展开查看 `TODO 9`"
 
-    ``` cmake
+    ``` cmake title="CMakeLists.txt"
     target_include_directories(Tutorial
         PUBLIC
             "${PROJECT_BINARY_DIR}"
@@ -232,7 +232,7 @@ cmake --build build
 
 ??? example "点击展开查看 `TODO 10`"
 
-    ``` cpp
+    ``` cpp title="TutorialConfig.h.in"
     // the configured options and settings for Tutorial
     #define Tutorial_VERSION_MAJOR @Tutorial_VERSION_MAJOR@
     #define Tutorial_VERSION_MINOR @Tutorial_VERSION_MINOR@
@@ -242,7 +242,7 @@ cmake --build build
 
 ??? example "点击展开查看 `TODO 11`"
 
-    ``` cpp
+    ``` cpp title="tutorial.cxx"
     #include "TutorialConfig.h"
     ```
 
@@ -250,7 +250,7 @@ cmake --build build
 
 ??? example "点击展开查看 `TODO 12`"
 
-    ``` cpp
+    ``` cpp title="tutorial.cxx"
     if (argc < 2) {
         // report version
         std::cout << argv[0] << " Version " << Tutorial_VERSION_MAJOR << "." << Tutorial_VERSION_MINOR << std::endl;
