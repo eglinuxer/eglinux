@@ -26,7 +26,7 @@ jobs:
 
       - run: pip install jieba pillow cairosvg
       - run: pip install git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git
-      - run: mkdocs gh-deploy --force
+      - run: mkdocs gh-deploy
 env:
   GH_TOKEN: ${{ secrets.GH_TOKEN }} 
   GOOGLE_ANALYTICS_KEY: ${{ secrets.GOOGLE_ANALYTICS_KEY }} 
