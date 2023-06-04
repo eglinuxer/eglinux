@@ -5,8 +5,8 @@ site_description: >-
   Eglinux 的个人网站，记录生活，分享技术！
 
 # Repository
-repo_name: squidfunk/mkdocs-material
-repo_url: https://github.com/squidfunk/mkdocs-material
+repo_name: eglinuxer/eglinux
+repo_url: https://github.com/eglinuxer/eglinux
 theme:
   name: material
   logo: assets/logo.svg
