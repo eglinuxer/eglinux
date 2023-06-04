@@ -1,4 +1,12 @@
 site_name: Eglinux
+site_url: https://www.eglinux.com
+site_author: Eglinux
+site_description: >-
+  Eglinux 的个人网站，记录生活，分享技术！
+
+# Repository
+repo_name: squidfunk/mkdocs-material
+repo_url: https://github.com/squidfunk/mkdocs-material
 theme:
   name: material
   logo: assets/logo.svg
@@ -22,6 +30,8 @@ theme:
     - search.suggest
     - search.highlight
     - search.share
+    - content.code.copy
+    # - content.code.select
   palette:
 
     # Palette toggle for automatic mode
@@ -63,6 +73,9 @@ plugins:
           background_color: "#0075D858"
           background_image: layouts/background.png
           font_family: Noto Sans SC
+  - privacy:
+      links_attr_map:
+        target: _blank
 
 extra:
   homepage: https://www.eglinux.com
@@ -102,8 +115,45 @@ extra:
           data: 0
           note: >-
             感谢您的反馈！请通过 <a href="https://github.com/eglinuxer/eglinux/issues/new/?title=[页面问题反馈]+{title}+-+{url}" target=_blank>Github issues</a> 告诉我改进建议。
-                     
+
+
 markdown_extensions:
+
+  # Python Markdown
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+      permalink_title: 跳转到此部分目录
+
+  # Python Markdown Extensions
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
+
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
@@ -132,6 +182,14 @@ nav:
       - 第 12 步 [打包调试和发布版本]: cmake/basic/12_packaging_debug_and_release.md
     - CMake 命令:
       - cmake/cmd/index.md
+  - Linux:
+    - linux/index.md
+  - C/C++:
+    - ccplus/index.md
+  - Python:
+    - python/index.md
+  - Qt:
+    - qt/index.md
 
 
 copyright: >
