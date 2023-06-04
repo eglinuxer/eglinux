@@ -5,6 +5,10 @@ hide:
 
 # CMake 基础教程
 
+!!! tip "特别说明"
+
+    本教程翻译自 CMake 的官方教程 [CMake Tutorial](https://cmake.org/cmake/help/latest/guide/tutorial/index.html)。
+
 ## 介绍
 
 CMake 教程提供了一个分步指南，涵盖了 CMake 帮助解决的常见构建系统问题。了解各种主题如何在一个示例项目中一起工作会很有帮助。
