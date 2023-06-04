@@ -1,6 +1,7 @@
 site_name: Eglinux
 site_url: https://www.eglinux.com
 site_author: Eglinux
+edit_uri: edit/main/docs/
 site_description: >-
   Eglinux 的个人网站，记录生活，分享技术！
 
@@ -11,6 +12,9 @@ theme:
   name: material
   logo: assets/logo.svg
   custom_dir: overrides
+  icon:
+    edit: material/pencil
+    view: material/eye
   font:
     text: Roboto
     code: Roboto Mono
@@ -34,6 +38,9 @@ theme:
     # - content.code.select
     - header.autohide
     - announce.dismiss
+    # - navigation.footer
+    - content.action.edit
+    - content.action.view
   palette:
 
     # Palette toggle for automatic mode
@@ -78,6 +85,11 @@ plugins:
   - privacy:
       links_attr_map:
         target: _blank
+  - git-revision-date-localized:
+      enable_creation_date: true
+  - git-committers:
+      repository: eglinuxer/eglinux
+      branch: main
 
 extra:
   homepage: https://www.eglinux.com
@@ -102,6 +114,17 @@ extra:
       - accept
       - manage
       - reject
+  social:
+    - icon: simple/github
+      name: GitHub
+      link: https://github.com/eglinuxer
+    - icon: simple/zhihu
+      name: 知乎
+      link: https://www.zhihu.com/people/eglinux
+    - icon: simple/bilibili
+      name: B站
+      link: https://space.bilibili.com/448334347
+  generator: false
   analytics:
     provider: google
     property: !ENV GOOGLE_ANALYTICS_KEY
