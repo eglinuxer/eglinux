@@ -196,7 +196,7 @@ nav:
       - 第 1 步 [一个简单的起点]: cmake/basic/01_a_basic_starting_point.md
       - 第 2 步 [添加一个库]: cmake/basic/02_adding_a_library.md
       - 第 3 步 [为库添加使用要求]: cmake/basic/03_adding_usage_requirements_for_a_library.md
-      - 第 4 步 [添加生成表达式]: cmake/basic/04_adding_eenerator_expressions.md
+      - 第 4 步 [添加生成表达式]: cmake/basic/04_adding_generator_expressions.md
       - 第 5 步 [安装和测试]: cmake/basic/05_installing_and_testing.md
       - 第 6 步 [添加测试看板支持]: cmake/basic/06_adding_support_for_a_testing_dashboard.md
       - 第 7 步 [添加系统分析]: cmake/basic/07_adding_system_introspection.md
