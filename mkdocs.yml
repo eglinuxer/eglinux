@@ -215,6 +215,8 @@ nav:
     - python/index.md
   - Qt:
     - qt/index.md
+  - Lua:
+    - lua/index.md
 
 
 copyright: >
