@@ -217,6 +217,8 @@ nav:
     - qt/index.md
   - Lua:
     - lua/index.md
+  - NeoVIM:
+    - neovim/index.md
 
 
 copyright: >
