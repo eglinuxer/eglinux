@@ -27,7 +27,7 @@ serial: CMake 工程实践指南-基础教程
 
 起始代码在 `Step5` 目录中提供。在本练习中，完成 `TODO 1` 到 `TODO 4`。
 
-先，更新 `MathFunctions/CMakeLists.txt` 以将 `MathFunctions` 和 `tutorial_compiler_flags` 库安装到 `lib` 目录。在同一个文件中，指定将 `MathFunctions.h` 安装到 `include` 目录所需的安装规则。
+首先，更新 `MathFunctions/CMakeLists.txt` 以将 `MathFunctions` 和 `tutorial_compiler_flags` 库安装到 `lib` 目录。在同一个文件中，指定将 `MathFunctions.h` 安装到 `include` 目录所需的安装规则。
 
 然后，更新顶层 `CMakeLists.txt` 以将 `Tutorial` 可执行文件安装到 `bin` 目录。最后，任何头文件都应该安装到 `include` 目录中。请记住，`TutorialConfig.h` 位于 [PROJECT_BINARY_DIR] 中。
 
