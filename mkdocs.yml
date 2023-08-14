@@ -209,6 +209,9 @@ nav:
       - cmake/cmd/index.md
   - Linux:
     - linux/index.md
+    - Linux 命令行:
+      - linux/cmd/index.md
+      - 软件包管理相关命令: linux/cmd/pkg_manage.md
   - C/C++:
     - ccplus/index.md
   - Python:
