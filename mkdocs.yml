@@ -1,6 +1,9 @@
 site_name: Eglinux
 theme:
   name: material
+  language: zh
+  logo: assets/favicon-16x16.png
+  favicon: assets/images/favicon.ico
   font:
     text: Noto Serif Simplified Chinese
     code: Roboto Mono
@@ -26,3 +29,6 @@ theme:
       toggle:
         icon: material/weather-night
         name: Switch to system preference
+
+extra:
+  homepage: https://www.eglinux.com
