@@ -48,6 +48,8 @@ theme:
     - navigation.top
     - toc.follow
     - search.suggest
+    - search.highlight
+    - search.share
 
 plugins:
   - search
