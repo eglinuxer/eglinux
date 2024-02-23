@@ -1,15 +1,17 @@
----
-hide:
-  - navigation
-  - toc
-  - path
-  - feedback
-title: Eglinux 的个人网站
-description: 记录生活，分享技术，广交朋友！
-serial: 个人资料
-icon: material/home
----
+# Welcome to MkDocs
 
-# Eglinux
+For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
-欢迎访问 Eglinux 的个人网站。
+## Commands
+
+* `mkdocs new [dir-name]` - Create a new project.
+* `mkdocs serve` - Start the live-reloading docs server.
+* `mkdocs build` - Build the documentation site.
+* `mkdocs -h` - Print help message and exit.
+
+## Project layout
+
+    mkdocs.yml    # The configuration file.
+    docs/
+        index.md  # The documentation homepage.
+        ...       # Other markdown pages, images and other files.
