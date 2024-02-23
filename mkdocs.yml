@@ -45,6 +45,12 @@ theme:
     - navigation.expand
     - navigation.path
     - navigation.indexes
+    - navigation.top
+    - toc.follow
+    - search.suggest
+
+plugins:
+  - search
 
 extra:
   homepage: https://www.eglinux.com
