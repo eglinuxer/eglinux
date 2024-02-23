@@ -1,4 +1,9 @@
 site_name: Eglinux
+site_url: https://www.eglinux.com/
+
+# Copyright
+copyright: Copyright &copy; 2023 - 2024 Eglinux
+
 theme:
   name: material
   language: zh
@@ -29,6 +34,37 @@ theme:
       toggle:
         icon: material/weather-night
         name: Switch to system preference
+  features:
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.instant.preview
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.expand
+    - navigation.path
+    - navigation.indexes
 
 extra:
   homepage: https://www.eglinux.com
+
+nav:
+  - 首页: index.md
+  - Eglinux:
+    - eglinux/index.md
+    - 简历: eglinux/resume.md
+    - 动态: eglinux/active.md
+    - 读书: eglinux/book.md
+    - 课程: eglinux/course.md
+    - 赞助: eglinux/support_me.md
+  - Python:
+    - python/index.md
+  - C/C++:
+    - ccplusplus/index.md
+  - CMake:
+    - cmake/index.md
+  - Qt:
+    - qt/index.md
+  - Lua:
+    - lua/index.md
