@@ -1,6 +1,10 @@
 site_name: Eglinux
 theme:
   name: material
+  font:
+    text: Noto Serif Simplified Chinese
+    code: Roboto Mono
+
   palette:
 
     # Palette toggle for automatic mode
