@@ -2,7 +2,6 @@ name: ci
 on:
   push:
     branches:
-      - master
       - main
 permissions:
   contents: write
@@ -26,10 +25,12 @@ jobs:
           path: .cache
           restore-keys: |
             mkdocs-material-
-      - run: sudo apt update;sudo apt install pngquant
+      - run: sudo apt install pngquant 
       - run: pip install git+https://${GH_TOKEN}@github.com/eglinuxer/mkdocs-material-insiders.git
       - run: pip install mkdocs-git-revision-date-localized-plugin
       - run: pip install mkdocs-git-committers-plugin-2
+      - run: pip install mkdocs-glightbox
       - run: mkdocs gh-deploy --force
 env:
   GH_TOKEN: ${{ secrets.GH_TOKEN }}
+  CI: true
