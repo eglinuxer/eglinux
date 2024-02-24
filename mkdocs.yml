@@ -1,5 +1,11 @@
 site_name: Eglinux
 site_url: https://www.eglinux.com/
+repo_name: eglinuxer/eglinux
+repo_url: https://github.com/eglinuxer/eglinux
+site_author: Eglinux
+edit_uri: edit/main/docs/
+site_description: >-
+  Eglinux 的个人网站，记录生活，分享技术！
 
 # Copyright
 copyright: Copyright &copy; 2023 - 2024 Eglinux
@@ -13,6 +19,10 @@ theme:
   font:
     text: Noto Serif Simplified Chinese
     code: Roboto Mono
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil
+    view: material/eye
 
   palette:
 
@@ -54,9 +64,17 @@ theme:
     - search.share
     - header.autohide
     - announce.dismiss
+    - content.action.edit
+    - content.action.view
 
 plugins:
   - search
+  - git-revision-date-localized:
+      enable_creation_date: true
+  - git-committers:
+      repository: eglinuxer/eglinux
+      branch: main
+      token: !ENV GH_TOKEN
 
 extra:
   homepage: https://www.eglinux.com
