@@ -75,6 +75,8 @@ plugins:
       repository: eglinuxer/eglinux
       branch: main
       token: !ENV GH_TOKEN
+  - projects
+  - optimize
 
 extra:
   homepage: https://www.eglinux.com
