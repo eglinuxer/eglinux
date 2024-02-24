@@ -6,6 +6,7 @@ copyright: Copyright &copy; 2023 - 2024 Eglinux
 
 theme:
   name: material
+  custom_dir: overrides
   language: zh
   logo: assets/favicon-16x16.png
   favicon: assets/images/favicon.ico
@@ -46,16 +47,30 @@ theme:
     - navigation.path
     - navigation.indexes
     - navigation.top
+    - navigation.footer
     - toc.follow
     - search.suggest
     - search.highlight
     - search.share
+    - header.autohide
+    - announce.dismiss
 
 plugins:
   - search
 
 extra:
   homepage: https://www.eglinux.com
+  generator: false
+  social:
+    - icon: simple/github
+      name: GitHub
+      link: https://github.com/eglinuxer
+    - icon: simple/zhihu
+      name: 知乎
+      link: https://www.zhihu.com/people/eglinux
+    - icon: simple/bilibili
+      name: B站
+      link: https://space.bilibili.com/448334347
 
 nav:
   - 首页: index.md
