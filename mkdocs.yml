@@ -167,6 +167,8 @@ nav:
     - python/index.md
     - Python 书籍:
       - python/mastering_python.md
+    - Python 开发环境:
+      - python/env.md
   - C/C++:
     - ccplusplus/index.md
   - CMake:
